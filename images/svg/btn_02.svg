@@ -1,0 +1,18 @@
+<svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5" filter="url(#filter0_f_373_3178)">
+<rect x="20" y="20" width="34" height="34" rx="17" fill="#15A670"/>
+</g>
+<path d="M55 30C55 39.9411 46.9411 48 37 48C27.0589 48 19 39.9411 19 30C19 20.0589 27.0589 12 37 12C46.9411 12 55 20.0589 55 30Z" fill="url(#paint0_radial_373_3178)"/>
+<path d="M29 54L34 59L45 48" stroke="white" stroke-linecap="round"/>
+<defs>
+<filter id="filter0_f_373_3178" x="0" y="0" width="74" height="74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_373_3178"/>
+</filter>
+<radialGradient id="paint0_radial_373_3178" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(41.54 12) rotate(93.0608) scale(28.8411 42.5666)">
+<stop stop-color="#ACF7CA"/>
+<stop offset="1" stop-color="#22D091"/>
+</radialGradient>
+</defs>
+</svg>

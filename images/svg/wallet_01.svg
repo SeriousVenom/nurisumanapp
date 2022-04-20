@@ -1,0 +1,8 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="wallet_01">
+<path id="Rectangle 2" d="M4 6.5V20H20V8H13" stroke="#333E63" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval 8" fill-rule="evenodd" clip-rule="evenodd" d="M15 15C15.5523 15 16 14.5523 16 14C16 13.4477 15.5523 13 15 13C14.4477 13 14 13.4477 14 14C14 14.5523 14.4477 15 15 15Z" stroke="#333E63"/>
+<path id="Rectangle 206" d="M4 6C4 4.89543 4.89543 4 6 4H14V8H6C4.89543 8 4 7.10457 4 6V6Z" stroke="#333E63"/>
+<path id="Rectangle 207" d="M12 14C12 12.6193 13.1193 11.5 14.5 11.5H20V16.5H14.5C13.1193 16.5 12 15.3807 12 14V14Z" stroke="#333E63"/>
+</g>
+</svg>

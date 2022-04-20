@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:nurisuman/UI/views/createProfile/createProfile_view.dart';
+import 'package:nurisuman/UI/views/createProfile/createProfileExecutor_view.dart';
 import 'package:nurisuman/UI/views/login/login_viewmodel.dart';
 import 'package:stacked/stacked.dart';
 
 import '../../sizeconfig.dart';
+import '../accountEnterExit/accountEnterExit_view.dart';
+import '../roleChoice/roleChoice_view.dart';
 
 class LoginViewRoute extends MaterialPageRoute {
   LoginViewRoute() : super(builder: (context) => const LoginView());
@@ -120,6 +122,7 @@ _loginWidget(context, LoginViewModel model) {
                               fontWeight: FontWeight.bold),
                           keyboardType: TextInputType.number,
                           inputFormatters: [model.maskFormatter],
+                          controller: phoneController,
                         ),
                       ),
                       Center(
@@ -274,7 +277,7 @@ _loginWidget(context, LoginViewModel model) {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        const CreateProfile()));
+                                        const AccountEnterExitView()));
                           },
                           child: const Text(
                             'войти',
