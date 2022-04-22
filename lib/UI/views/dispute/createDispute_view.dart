@@ -145,7 +145,202 @@ _createDisputeView(BuildContext context, DisputeViewModel model) {
               )
             ],
           ),
-        )
+        ),
+        const SizedBox(height: 20),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Padding(
+              padding: EdgeInsets.only(left: 30),
+              child: Text(
+                'Текст претензии',
+                style: TextStyle(
+                    color: Colors.grey,
+                    fontFamily: "Ubuntu",
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.grey.withOpacity(0.05),
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(10.0),
+                ),
+              ),
+              margin: const EdgeInsets.only(
+                  right: 30, left: 30, bottom: 30, top: 8),
+              child: Stack(
+                children: <Widget>[
+                  TextFormField(
+                    decoration: const InputDecoration(
+                        contentPadding: EdgeInsets.only(left: 15, top: 15),
+                        focusColor: Colors.black,
+                        hintText: 'Введите текст',
+                        hintStyle: TextStyle(
+                            fontFamily: "Ubuntu",
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold)),
+                    maxLines: 6,
+                    style: const TextStyle(
+                        fontFamily: "Ubuntu",
+                        color: Color.fromRGBO(91, 91, 126, 1),
+                        fontWeight: FontWeight.bold),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(
+                        left: MediaQuery.of(context).size.width / 1.3, top: 10),
+                    child: const ImageIcon(
+                      AssetImage('images/icons/error.png'),
+                      color: Color.fromRGBO(0, 89, 165, 1),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Padding(
+              padding: EdgeInsets.only(left: 30),
+              child: Text(
+                'Предполагаемая компенсация',
+                style: TextStyle(
+                    color: Colors.grey,
+                    fontFamily: "Ubuntu",
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.grey.withOpacity(0.05),
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(10.0),
+                ),
+              ),
+              margin: const EdgeInsets.only(
+                  right: 30, left: 30, bottom: 30, top: 8),
+              child: Stack(
+                children: <Widget>[
+                  TextFormField(
+                    decoration: const InputDecoration(
+                        contentPadding: EdgeInsets.only(left: 15, top: 15),
+                        focusColor: Colors.black,
+                        hintText: 'Введите текст',
+                        hintStyle: TextStyle(
+                            fontFamily: "Ubuntu",
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold)),
+                    maxLines: 6,
+                    style: const TextStyle(
+                        fontFamily: "Ubuntu",
+                        color: Color.fromRGBO(91, 91, 126, 1),
+                        fontWeight: FontWeight.bold),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(
+                        left: MediaQuery.of(context).size.width / 1.3, top: 10),
+                    child: const ImageIcon(
+                      AssetImage('images/icons/repeat.png'),
+                      color: Color.fromRGBO(0, 89, 165, 1),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Padding(
+              padding: EdgeInsets.only(left: 30),
+              child: Text(
+                'Прикрепить фото',
+                style: TextStyle(
+                    color: Colors.grey,
+                    fontFamily: "Ubuntu",
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.grey.withOpacity(0.05),
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(10.0),
+                ),
+              ),
+              margin: const EdgeInsets.only(
+                  right: 30, left: 30, bottom: 30, top: 8),
+              child: Stack(
+                children: <Widget>[
+                  TextFormField(
+                    decoration: const InputDecoration(
+                        contentPadding: EdgeInsets.only(left: 15),
+                        focusColor: Colors.black,
+                        hintText: 'Прикрепить',
+                        hintStyle: TextStyle(
+                            fontFamily: "Ubuntu",
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold)),
+                    style: const TextStyle(
+                        fontFamily: "Ubuntu",
+                        color: Color.fromRGBO(91, 91, 126, 1),
+                        fontWeight: FontWeight.bold),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(
+                        left: MediaQuery.of(context).size.width / 1.3, top: 15),
+                    child: const ImageIcon(
+                      AssetImage('images/icons/pin.png'),
+                      color: Color.fromRGBO(0, 89, 165, 1),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        Center(
+          child: Container(
+            height: 50,
+            width: 250,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.15),
+                  spreadRadius: 2,
+                  blurRadius: 8,
+                  offset: const Offset(0, 7),
+                )
+              ],
+              gradient: const LinearGradient(
+                colors: [
+                  Color.fromRGBO(229, 67, 45, 1),
+                  Color.fromRGBO(255, 150, 143, 1)
+                ],
+              ),
+              borderRadius: const BorderRadius.all(
+                Radius.circular(25.0),
+              ),
+            ),
+            child: Center(
+              child: GestureDetector(
+                onTap: () {},
+                child: const Text(
+                  'ОТПРАВИТЬ СПОР',
+                  style: TextStyle(
+                    fontFamily: "Ubuntu",
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
       ],
     ),
   );
