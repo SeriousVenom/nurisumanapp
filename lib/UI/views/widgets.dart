@@ -321,6 +321,7 @@ customSideMenu(BuildContext context, model) {
                           color: Colors.blue.shade800),
                     ),
                     ListView.builder(
+                        physics: const ScrollPhysics(),
                         shrinkWrap: true,
                         itemCount: menuNames.length,
                         itemBuilder: (BuildContext context, int index) {

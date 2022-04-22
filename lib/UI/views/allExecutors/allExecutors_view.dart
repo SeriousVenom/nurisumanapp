@@ -201,6 +201,7 @@ _executorsWidget(BuildContext context, AllExecutorsViewModel model) {
                       ),
                     );
                   }),
+              const SizedBox(height: 100)
             ],
           ),
           model.filterOpen == false
@@ -395,7 +396,6 @@ _filterUp(AllExecutorsViewModel model, context) {
                                                   color: Color.fromRGBO(
                                                       137, 146, 155, 1)),
                                             ),
-                                            const SizedBox(height: 5)
                                           ]),
                                     );
                                   })

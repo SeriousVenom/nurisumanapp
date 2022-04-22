@@ -76,6 +76,7 @@ _roleChoice(context, RoleViewModel model) {
         Stack(
           children: [
             ListView.builder(
+                physics: const ScrollPhysics(),
                 shrinkWrap: true,
                 padding: const EdgeInsets.only(left: 40, right: 40, top: 20),
                 itemCount: texts.length,

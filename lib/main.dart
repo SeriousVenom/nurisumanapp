@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nurisuman/UI/views/goods/goods_view.dart';
 import 'package:nurisuman/UI/views/order/orderCustomer_view.dart';
+import 'package:nurisuman/UI/views/splash.dart';
 import 'UI/views/addGood/addGood_view.dart';
+import 'UI/views/dispute/createDispute_view.dart';
 import 'UI/views/goods/good_view.dart';
 import 'UI/views/goods/myGoods_view.dart';
 import 'UI/views/myOrders/myOrders_view.dart';
@@ -23,6 +25,6 @@ class AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        debugShowCheckedModeBanner: false, home: MyOrdersView());
+        debugShowCheckedModeBanner: false, home: CreateDisputeView());
   }
 }
